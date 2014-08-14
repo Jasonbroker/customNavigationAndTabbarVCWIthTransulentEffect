@@ -43,11 +43,13 @@
     if (_naviblurView ==nil) {
         CGFloat y =self.navigationBar.frame.origin.y;
         
-        CGRect frame = CGRectMake(0, -y, self.navigationBar.frame.size.width, y + self.navigationBar.frame.size.height);
+        CGRect frame = CGRectMake(0, 0, self.navigationBar.frame.size.width, y + self.navigationBar.frame.size.height);
         
         _naviblurView = [[ZCNaviBlurView alloc] initWithFrame:frame];
         
-        [self.navigationBar addSubview:_naviblurView];
+//        [self.navigationBar addSubview:_naviblurView];
+        [self.view insertSubview:_naviblurView belowSubview:self.navigationBar];
+
         [self.navigationBar sendSubviewToBack:_naviblurView];
 
         
