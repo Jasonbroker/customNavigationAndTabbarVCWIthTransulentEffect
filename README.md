@@ -1,3 +1,1 @@
-one bug left:
-When navigationController pushed VC, although it is on the bottom of
-the navigation bar; the back button can not be pressed.
+This example contains a very fantastic and interesting idea of replacing the system transulent style(as to the compatible to the systems LOWER than iOS7.
